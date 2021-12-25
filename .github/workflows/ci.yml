@@ -23,5 +23,5 @@ jobs:
       - name: Install MeshFlash from local
         run: |
           pip3 install .
-          which MeshFlash
-          MeshFlash
+          which meshflash
+          meshflash
