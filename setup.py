@@ -32,7 +32,7 @@ setup(
     python_requires='>=3.6',
     entry_points={
         "console_scripts": [
-            "meshflash=meshflash.__main__:main",
+            "meshflash=MeshFlash.__main__:main",
         ]
     },
 )
