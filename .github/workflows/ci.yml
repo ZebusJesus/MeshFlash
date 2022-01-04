@@ -22,6 +22,9 @@ jobs:
       - name: Install MeshFlash from local
         run: |
           pip3 install .
+      - name: See if the executable is in our path
+        run: |
+          which meshflash
       - name: Validate we can run it
         run: |
           meshflash -h
