@@ -33,8 +33,8 @@ jobs:
           pip install pyinstaller
       - name: Build exe
         run: |
-          pyinstaller -F -n MeshFlash MeshFlash/__main__.py
+          pyinstaller MeshFlash.spec
       - uses: actions/upload-artifact@v2
         with:
           name: MeshFlash
-          path: dist/windows
+          path: dist

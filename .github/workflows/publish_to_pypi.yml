@@ -34,13 +34,10 @@ jobs:
       - name: Install pyinstaller
         run: |
           pip install pyinstaller
+
       - name: Build exe
         run: |
-          pyinstaller -F -n MeshFlash MeshFlash/__main__.py
-      - uses: actions/upload-artifact@v2
-        with:
-          name: MeshFlash
-          path: dist/windows
+          pyinstaller MeshFlash.spec
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@master
