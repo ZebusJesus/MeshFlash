@@ -31,14 +31,6 @@ jobs:
           --outdir dist/
           .
 
-      - name: Install pyinstaller
-        run: |
-          pip install pyinstaller
-
-      - name: Build exe
-        run: |
-          pyinstaller MeshFlash.spec
-
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@master
         with:
