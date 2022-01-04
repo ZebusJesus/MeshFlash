@@ -48,7 +48,7 @@ def make_winMAIN():  ##define Frimware Window loayout and conents
 def arg_check():
     # TODO: may consider using arg parse
     if len(sys.argv) > 1:
-        print("Usage: meshflash - no args needed.")
+        print("Usage: MeshFlash - no args needed.")
         sys.exit(0)
 
 def main():
