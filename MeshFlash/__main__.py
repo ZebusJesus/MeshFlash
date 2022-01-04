@@ -5,6 +5,7 @@
 #   MeshFlash
 #   Thank you to all the members of meshtastic that make this project possible
 #
+import sys
 import PySimpleGUI as sg
 import os
 import requests
@@ -44,7 +45,14 @@ def make_winMAIN():  ##define Frimware Window loayout and conents
     return sg.Window('Firmware Utility', layout, finalize=True, no_titlebar=True, grab_anywhere=True)
 # ------ /Window 2 ------ #
 
+def arg_check():
+    # TODO: may consider using arg parse
+    if len(sys.argv) > 1:
+        print("Usage: meshflash - no args needed.")
+        sys.exit(0)
+
 def main():
+    arg_check()
     WindowMain = make_winMAIN()
 # --- Start Script Loop checking for events ----- #
     while True:             # Event Loop
