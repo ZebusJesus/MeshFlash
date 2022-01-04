@@ -26,7 +26,9 @@ setup(
         "Programming Language :: Python :: 3.7",
     ],
     include_package_data=True,
-    install_requires=["PySimpleGUI>=4.34.0","requests>=2.25.1","esptool>=3.0"],
+    packages=["MeshFlash"],
+    install_requires=["PySimpleGUI>=4.34.0", "requests>=2.25.1",
+                      "esptool>=3.0", "pypubsub"],
     extras_require={},
     python_requires='>=3.6',
     entry_points={

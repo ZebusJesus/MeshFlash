@@ -1,3 +1,5 @@
 venv/
 MeshFlash.egg-info/
 build/
+.DS_Store
+.*swp
