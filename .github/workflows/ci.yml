@@ -28,3 +28,13 @@ jobs:
       - name: Validate we can run it
         run: |
           MeshFlash -h
+      - name: Install pyinstaller
+        run: |
+          pip install pyinstaller
+      - name: Build exe
+        run: |
+          pyinstaller -F -n MeshFlash MeshFlash/__main__.py
+      - uses: actions/upload-artifact@v2
+      with:
+        name: MeshFlash
+        path: dist/windows
