@@ -24,7 +24,7 @@ jobs:
           pip3 install .
       - name: See if the executable is in our path
         run: |
-          which meshflash
+          which MeshFlash
       - name: Validate we can run it
         run: |
-          meshflash -h
+          MeshFlash -h
