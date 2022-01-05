@@ -12,7 +12,7 @@ with open("README.md", "r") as fh:
 # This call to setup() does all the work
 setup(
     name="MeshFlash",
-    version="1.01",
+    version="1.02",
     description="Meshtastic Utility for flashing radios",
     long_description=long_description,
     long_description_content_type="text/markdown",
