@@ -17,6 +17,7 @@ jobs:
 
       - name: Build exe
         run: |
+          pip install pyinstaller
           pyinstaller -F -n MeshFlash MeshFlash/__main__.py
       - uses: actions/upload-artifact@v2
         with:
