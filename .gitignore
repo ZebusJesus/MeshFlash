@@ -1,3 +1,7 @@
 venv/
+dist/
 MeshFlash.egg-info/
 build/
+.DS_Store
+.*swp
+__pycache__/
